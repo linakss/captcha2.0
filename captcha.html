@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Портфолио ССКР</title>
+        <link rel="stylesheet" href="style.css">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <article class="container">
+            
+            <form action="submit.php" method="POST">
+                <article class="captcha-container">
+                    <h1 id="h">Пожалуйста, пройдите капчу :)</h1>
+                    <p>В целях безопасности пройдите, пожалуйста, проверку на то, что вы человек, а не робот.<br><span>Всё, что вам необходимо сделать: <br>1) Внимательно просмотреть изображение ниже. Если вы не понимаете его содержимое, то можете изучить другое, нажав на кнопку "обновить страницу". В каждом браузере нахождение кнопки в разных углах и внешнее отображение разное, но чаще всего в левом верхнем углу в виде закругленной стрелочки;<br>2) Введите в поле "Введите символы" латинские (англ) буквы большие и (или) маленькие и цифры, если они там есть;<br>3) Нажмите кнопку "Далее", чтоб пройти на страницу с обратной связью.</p></span>
+                    <img src="captcha_image.php" alt="Капча" class="captcha-image">
+                    <input type="text" name="captcha_input" placeholder="Введите символы" required>
+                    <button type="submit">Далее</button>
+                </article>
+                
+            </form>
+        </article>
+        <script src="script.js" defer></script>
+    </body>
+</html>
