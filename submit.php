@@ -21,7 +21,7 @@
                     if ($captchaInput === $_SESSION['captcha']) {
                         echo "<h1>Капча успешно пройдена!</h1><br>
                         <button class='pulse-button'>
-                        <a href='obrsvyaz.html' >Супер!</a>
+                        <a class='btn' href='obrsvyaz.html' >Супер!</a>
                         <span class='pulse-button__rings'></span>
                         <span class='pulse-button__rings'></span>
                         <span class='pulse-button__rings'></span>
